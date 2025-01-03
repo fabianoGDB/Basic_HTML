@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youtube</title>
     <style>
+      .search-bar {
+        display: block;
+        font-size: 20px;
+        margin: 10px;
+      }
+      .video-preview {
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 15px;
+      }
+
       .thumbnail {
         width: 300px;
         border-radius: 5px;
         display: block;
       }
 
-      .search-bar {
-        font-size: 20px;
-        margin: 10px;
-      }
       .video-title {
         width: 300px;
       }
@@ -28,14 +36,25 @@
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="Search" />
-    <img class="thumbnail" src="./thumbnails/thumbnail-1.webp" />
 
-    <p class="video-title">
-      illum deserunt ex eligendi <strong>suscipit delectus</strong> dolorem
-      eveniet, quasi, soluta dolorum animi distinctio. Eum architecto culpa
-      quaerat tenetur ea!
-    </p>
-    <p class="video-author">Jhon Lorem</p>
-    <p class="video-stats">3.4M views &#183; 6 months ago</p>
+    <div class="video-preview">
+      <img class="thumbnail" src="./thumbnails/thumbnail-1.webp" />
+
+      <p class="video-title">
+        illum deserunt ex eligendi suscipit delectus dolorem eveniet, quasi,
+        soluta dolorum animi distinctio. Eum architecto culpa quaerat tenetur
+        ea!
+      </p>
+      <p class="video-author">Jhon Lorem</p>
+      <p class="video-stats">3.4M views &#183; 6 months ago</p>
+    </div>
+
+    <div class="video-preview">
+      <img class="thumbnail" src="./thumbnails/thumbnail-2.webp" />
+
+      <p class="video-title">Try Not To Laugh Challenge #9</p>
+      <p class="video-author">Markiplier</p>
+      <p class="video-stats">19M views &#183; 4 years ago</p>
+    </div>
   </body>
 </html>
