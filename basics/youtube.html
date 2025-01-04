@@ -4,7 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youtube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
+      p {
+        font-family: Roboto, Arial;
+      }
       .search-bar {
         display: block;
         font-size: 20px;
@@ -17,14 +27,34 @@
         margin-right: 15px;
       }
 
+      .thumbnail-row {
+        margin-bottom: 20px;
+      }
+
       .thumbnail {
         width: 300px;
         border-radius: 5px;
         display: block;
       }
 
+      .video-infos {
+        display: inline-block;
+        width: 200px;
+      }
+      .channel-icon {
+        display: inline-block;
+        vertical-align: top;
+        width: 50px;
+      }
+
+      .profile-icon {
+        border-radius: 50%;
+        width: 80%;
+      }
+
       .video-title {
-        width: 300px;
+        margin-top: 0px;
+        font-size: 14px;
       }
 
       .video-author {
@@ -38,15 +68,23 @@
     <input class="search-bar" type="text" placeholder="Search" />
 
     <div class="video-preview">
-      <img class="thumbnail" src="./thumbnails/thumbnail-1.webp" />
-
-      <p class="video-title">
-        illum deserunt ex eligendi suscipit delectus dolorem eveniet, quasi,
-        soluta dolorum animi distinctio. Eum architecto culpa quaerat tenetur
-        ea!
-      </p>
-      <p class="video-author">Jhon Lorem</p>
-      <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="./thumbnails/thumbnail-1.webp" />
+      </div>
+      <div>
+        <div class="channel-icon">
+          <img class="profile-icon" src="./channel-icon/channel-1.jpeg" />
+        </div>
+        <div class="video-infos">
+          <p class="video-title">
+            illum deserunt ex eligendi suscipit delectus dolorem eveniet, quasi,
+            soluta dolorum animi distinctio. Eum architecto culpa quaerat
+            tenetur ea!
+          </p>
+          <p class="video-author">Jhon Lorem</p>
+          <p class="video-stats">3.4M views &#183; 6 months ago</p>
+        </div>
+      </div>
     </div>
 
     <div class="video-preview">
