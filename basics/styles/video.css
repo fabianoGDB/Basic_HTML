@@ -5,6 +5,7 @@
 
   .thumbnail-row {
     margin-bottom: 12px;
+    position: relative;
   }
 
   .thumbnail {
@@ -12,6 +13,17 @@
     border-radius: 5px;
   }
 
+  .video-time{
+    font-family: Roboto, Arial;;
+    background-color: black;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    padding: 2px 4px 2px 4px;
+  }
   .video-info-grid {
     display: grid;
     grid-template-columns: 50px 1fr;
