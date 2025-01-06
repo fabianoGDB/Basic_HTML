@@ -4,6 +4,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+
+    background-color: white;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(211, 205, 205);
 }
 
 .left-section{
@@ -42,7 +54,7 @@
     border-style: solid;
     border-radius: 2px;
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.5);
-
+    width: 0;
 }
 
 .search-icon {
@@ -54,7 +66,8 @@
     height: 40px;
     width: 40px;
     background-color: rgb(240, 240, 240);
-    border-width: 1px;
+    border-width: 0.5px;
+    border-color: gray;
     border-style: solid;
     color: rgb(192, 192, 192);
     border-radius: 2px;
@@ -80,6 +93,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-shrink: 0;
 }
 
 
