@@ -23,10 +23,6 @@
         margin: 10px;
       }
       .video-preview {
-        width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 15px;
       }
 
       .thumbnail-row {
@@ -34,14 +30,18 @@
       }
 
       .thumbnail {
-        width: 300px;
+        width: 100%;
         border-radius: 5px;
-        display: block;
+      }
+
+      .video-info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
       }
 
       .video-infos {
         display: inline-block;
-        width: 200px;
+        width: 245px;
       }
       .channel-icon {
         display: inline-block;
@@ -71,37 +71,138 @@
       .video-author {
         margin-bottom: 4px;
       }
+
+      .videos-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 30px;
+      }
     </style>
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="Search" />
 
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="./thumbnails/thumbnail-1.webp" />
-      </div>
-      <div>
-        <div class="channel-icon">
-          <img class="profile-icon" src="./channel-icon/channel-1.jpeg" />
+    <div class="videos-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="./thumbnails/thumbnail-1.webp" />
         </div>
-        <div class="video-infos">
-          <p class="video-title">
-            Illum deserunt ex eligendi suscipit delectus dolorem eveniet, quasi,
-            soluta dolorum animi distinctio. Eum architecto culpa quaerat
-            tenetur ea!
-          </p>
-          <p class="video-author">Jhon Lorem</p>
-          <p class="video-stats">3.4M views &#183; 6 months ago</p>
+        <div class="video-info-grid">
+          <div class="channel-icon">
+            <img class="profile-icon" src="./channel-icon/channel-1.jpeg" />
+          </div>
+          <div class="video-infos">
+            <p class="video-title">
+              Illum deserunt ex eligendi suscipit delectus dolorem eveniet,
+              quasi, soluta dolorum animi distinctio. Eum architecto culpa
+              quaerat tenetur ea!
+            </p>
+            <p class="video-author">Jhon Lorem</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="video-preview">
-      <img class="thumbnail" src="./thumbnails/thumbnail-2.webp" />
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="./thumbnails/thumbnail-2.webp" />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-icon">
+            <img class="profile-icon" src="./channel-icon/channel-2.jpeg" />
+          </div>
+          <div class="video-infos">
+            <p class="video-title">
+              Illum deserunt ex eligendi suscipit delectus dolorem eveniet,
+              quasi, soluta dolorum animi distinctio. Eum architecto culpa
+              quaerat tenetur ea!
+            </p>
+            <p class="video-author">Jhon Lorem</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
 
-      <p class="video-title">Try Not To Laugh Challenge #9</p>
-      <p class="video-author">Markiplier</p>
-      <p class="video-stats">19M views &#183; 4 years ago</p>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="./thumbnails/thumbnail-3.webp" />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-icon">
+            <img class="profile-icon" src="./channel-icon/channel-3.jpeg" />
+          </div>
+          <div class="video-infos">
+            <p class="video-title">
+              Illum deserunt ex eligendi suscipit delectus dolorem eveniet,
+              quasi, soluta dolorum animi distinctio. Eum architecto culpa
+              quaerat tenetur ea!
+            </p>
+            <p class="video-author">Jhon Lorem</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="./thumbnails/thumbnail-4.webp" />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-icon">
+            <img class="profile-icon" src="./channel-icon/channel-4.jpeg" />
+          </div>
+          <div class="video-infos">
+            <p class="video-title">
+              Illum deserunt ex eligendi suscipit delectus dolorem eveniet,
+              quasi, soluta dolorum animi distinctio. Eum architecto culpa
+              quaerat tenetur ea!
+            </p>
+            <p class="video-author">Jhon Lorem</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="./thumbnails/thumbnail-5.webp" />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-icon">
+            <img class="profile-icon" src="./channel-icon/channel-5.jpeg" />
+          </div>
+          <div class="video-infos">
+            <p class="video-title">
+              Illum deserunt ex eligendi suscipit delectus dolorem eveniet,
+              quasi, soluta dolorum animi distinctio. Eum architecto culpa
+              quaerat tenetur ea!
+            </p>
+            <p class="video-author">Jhon Lorem</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="./thumbnails/thumbnail-6.webp" />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-icon">
+            <img class="profile-icon" src="./channel-icon/channel-6.jpeg" />
+          </div>
+          <div class="video-infos">
+            <p class="video-title">
+              Illum deserunt ex eligendi suscipit delectus dolorem eveniet,
+              quasi, soluta dolorum animi distinctio. Eum architecto culpa
+              quaerat tenetur ea!
+            </p>
+            <p class="video-author">Jhon Lorem</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
